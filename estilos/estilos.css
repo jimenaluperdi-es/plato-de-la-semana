@@ -1,9 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-image: url(../imagenes/fondo.webp);
+  background-size: cover;
+} 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  flex-direction: column; 
+  align-items: center;    
+  background-color: white; 
 }
 
 .myDiv {
@@ -19,8 +24,11 @@ body {
 }
 
 .contenido {
+  flex: 1;                
+  width: 530px;           
   background-color: rgb(244, 236, 225);
-  min-height: 400px;
+  padding: 20px;
+  position: relative;     
 }
 
 .listas-sin-estilo {
@@ -55,4 +63,68 @@ h2 {
 .cursiva {
   font-style: italic;
   color: rgb(91, 182, 247);
+}
+.imgIndex {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+.btn-atras {
+  /* Posicionamiento */
+  position: fixed;
+  top: 15px;
+  left: 15px;
+
+  /* Estilo Moderno */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #007bff, #0056b3); 
+  color: white;
+  border: none;
+  border-radius: 50px; 
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; 
+}
+
+/* Efecto cuando pasas el mouse por encima */
+.btn-atras:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); 
+}
+.btn-atras:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.fila {
+  display: flex;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 2;
+}
+
+.img-plato {
+  flex: 1;
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: rgb(244, 236, 225); 
+  padding: 15px;
+  text-align: center;
+  width: 530px;           
+  border-top: 1px solid #ddd; 
 }
