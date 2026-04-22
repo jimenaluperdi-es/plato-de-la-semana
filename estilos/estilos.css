@@ -30,7 +30,7 @@ body {
 .contenido {
   flex: 1;                
   width: 530px;           
-  background-color: rgb(244, 236, 225);
+  background-color: rgb(249, 218, 174);
   padding: 20px;
   position: relative;     
 }
